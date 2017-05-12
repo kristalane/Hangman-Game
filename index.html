@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Hangman!</title>
-    <!--CSS file link goes here  -->
 
     <!-- Bootstrap - Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -11,25 +10,54 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- link to my css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section>
-      <h1>Press any key to get started!</h1>
 
-        <h2>Stats</h2>
-          <div id="Wins">Wins: </div>
-          <div id="Losses">Losses: </div>
-          <div id="Guesses-Remaining">Guesses remaining: </div>
-          <div id="Letters-Guessed">Letters already guessed: </div>
+      <h1 id="start-game">Press any key to get started!</h1>
+      <!-- Main game section -->
+            <div class="container-fluid">
+              <div class="row main-section">
+                  <div class="col-sm-7 Game">
+                    <div class="main-header">
+                      <h1>Hangman - Chef's Kitchen</h1>
+                      <hr>
+                    </div>
 
-        <h2>Game</h2>
-          <div id="word-area"></div>
+                    <h2>Game</h2>
+                      <div id="word-area"></div>
+                  </div>
+                </div>
+      <!-- Sidebar section -->
+                  <div class="col-md-5 sidebar">
+                    <h2>Stats</h2>
+                      <div id="Wins">Wins: </div>
+                      <div id="Losses">Losses: </div>
+                      <div id="Guesses-Remaining">Guesses remaining: </div>
+                      <div id="Letters-Guessed">Letters already guessed: </div>
 
+                  </div>
+
+        <!-- Footer section -->
+              <div class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container text-center">
+                  <p class="navbar-text col-md-12 col-sm-12 and col-xs-12">Copyright &copy; 2017 Krista Lane</p>
+                  <p class="navbar-text col-md-12 col-sm-12 and col-xs-12"><a href="http://www.freepik.com/free-photos-vectors/background">Background image created by Dashu83 - Freepik.com</a></p>
+                </div>
+              </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js" charset="utf-8"></script>
 
   </body>
-  <script src="assets/javascript/game.js" charset="utf-8"></script>
+
 </html>

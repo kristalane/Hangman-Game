@@ -19,6 +19,7 @@ var winText = document.getElementById("Wins");
 var lossText = document.getElementById("Losses");
 var guessRemainText = document.getElementById("Guesses-Remaining");
 var lettersGuessedText = document.getElementById("Letters-Guessed");
+var startGameText = document.getElementById("start-game")
 
 // start or reset game - is the game running?
 document.onkeypress = keyPressed;
@@ -28,6 +29,7 @@ function keyPressed(event){
   }
   else {
     resetGame();
+    startGameText.style.display = 'none';
   }
 }
 // function to start/reset the game.
@@ -116,8 +118,7 @@ function winning() {
 
 function losing(){
   losses ++;
-  alert("You wouldn't last a minute in my kitchen if you can't make " + theWord"!");
-
+  alert("You wouldn't last a minute in my kitchen if you can't make " + theWord + "!");
   resetGame();
 }
 
@@ -127,6 +128,3 @@ function updateScore(){
   guessRemainText.innerHTML = "Guesses Remaining: " + guessRemain;
   lettersGuessedText.innerHTML = "Letters Guessed: " + guessed;
 }
-
-
-// function to 'draw' more pieces of hangman
