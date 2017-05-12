@@ -5,4 +5,17 @@ body {
   height: 500px;
 
 }
-/*set id or class with the background as the image*/
+/*couldn't resize the background image properly, probably needed to move the image to be the background for the entire container. Wanted the "game" area to be a dish or pan on top of the table background*/
+
+.sidebar {
+  background-image: url("#");
+  font-weight: bold;
+  color: green;
+  float:right;
+  width: 25%;
+}
+
+.main-section {
+  background-image: url("#");
+  width: 60%;
+}
