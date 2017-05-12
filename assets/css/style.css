@@ -1,21 +1,28 @@
 
 body {
   background-image: url("../images/table_background.jpg");
-  width: 500px;
-  height: 500px;
+  background-size: 100%;
 
 }
-/*couldn't resize the background image properly, probably needed to move the image to be the background for the entire container. Wanted the "game" area to be a dish or pan on top of the table background*/
+/*Wanted the entire #word-area to be a dish or pan on top of the table background... never quite got it to work properly*/
 
 .sidebar {
-  background-image: url("#");
+  background-image: url("http://cdn.habitat.co.uk/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/3/3/335628.jpg");
+  background-size: contain;
   font-weight: bold;
   color: green;
   float:right;
   width: 25%;
+  padding-bottom: 30px;
 }
 
-.main-section {
-  background-image: url("#");
-  width: 60%;
+#word-area {
+  background-image: url("http://98329bfccf2a7356f7c4-b113946b17b55222ad1df26d6703a42e.r50.cf2.rackcdn.com/br_trends_1.png");
+  background-size: 80%;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  width: auto;
+  padding: 75px;
+  margin: 20px;
 }
