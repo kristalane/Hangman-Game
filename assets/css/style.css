@@ -4,13 +4,18 @@ body {
   background-size: 100%;
 
 }
+
+.main-header {
+  color: white;
+}
+
 /*Wanted the entire #word-area to be a dish or pan on top of the table background... never quite got it to work properly*/
 
 .sidebar {
   background-image: url("http://cdn.habitat.co.uk/media/catalog/product/cache/1/image/1200x/9df78eab33525d08d6e5fb8d27136e95/3/3/335628.jpg");
   background-size: contain;
   font-weight: bold;
-  color: green;
+  color: red;
   float:right;
   width: 25%;
   padding-bottom: 30px;

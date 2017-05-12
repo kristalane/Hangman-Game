@@ -35,7 +35,6 @@ function keyPressed(event){
 // function to start/reset the game.
 function resetGame(){
   theWord = pickWord();
-  console.log("theword = " + theWord);
   isGameRunning = true;
   guessRemain = theWord.length + 3;
   guessed = [];
@@ -59,7 +58,6 @@ function playGame(event) {
   else {
     guessed.push(guess);
     if (theWord.includes(guess)) {
-      console.log("correct guess");
       updateBlanks();
       checkHasWon();
     }
